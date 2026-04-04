@@ -1,0 +1,13 @@
+risk_id,title,category,threat_source,vulnerability,likelihood,impact,current_controls,owner
+RISK-001,Phishing Attack,People & Culture,External attacker,Human error - insufficient awareness,4,4,Basic email filtering - annual training,CISO
+RISK-002,Cloud Misconfiguration,Cloud & Infrastructure,Internal - accidental,Lack of IaC review - no CSPM,3,5,Manual config reviews,VP Engineering
+RISK-003,Key Person Dependency,People & Culture,Employee departure,Insufficient documentation - no cross-training,4,3,Limited documentation,Department Heads
+RISK-004,Laptop Theft,Physical Security,External - theft,No full-disk encryption on all devices,2,3,Partial encryption - no MDM,IT Director
+RISK-005,Ransomware,Data Protection,External - cybercriminal,Insufficient backup testing - endpoint gaps,3,5,Basic antivirus - untested backups,CISO
+RISK-006,Shadow IT,Operations,Internal - employees,No software approval process,3,3,Informal requests to IT,IT Director
+RISK-007,Failed SOC 2 Audit,Compliance & Legal,Internal - process gaps,Undocumented controls - missing evidence,3,4,Ad-hoc documentation,CISO
+RISK-008,Insider Threat,People & Culture,Internal - malicious or negligent,Excessive access privileges - poor monitoring,2,5,Basic access controls,CISO
+RISK-009,Third-Party Data Breach,Third-Party / Vendor,External - vendor compromise,No vendor security assessment program,2,4,Contractual clauses only,CISO
+RISK-010,Orphaned Accounts,Access & Identity,Internal - process gap,No automated offboarding - no access reviews,3,3,Manual offboarding checklist,IT Director
+RISK-011,Insufficient Logging,Cloud & Infrastructure,Internal - visibility gap,No centralized log management,3,3,Basic cloud provider logs,VP Engineering
+RISK-012,Business Continuity Failure,Operations,Multiple - disaster or outage,No BCP or DR plan documented,2,5,Informal recovery knowledge,COO

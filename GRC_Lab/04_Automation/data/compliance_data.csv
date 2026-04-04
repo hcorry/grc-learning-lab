@@ -1,0 +1,19 @@
+control_area,nist_csf_id,nist_csf_description,soc2_id,soc2_description,iso27001_id,iso27001_description
+Access Control - Least Privilege,PR.AA-05,Access permissions use least privilege and separation of duties,CC6.3,Access authorized modified or removed based on roles,A.8.3,Information access restriction
+Security Awareness Training,PR.AT-01,Personnel are provided awareness and training,CC1.4,Entity demonstrates commitment to attract develop and retain competent individuals,A.6.3,Information security awareness education and training
+Incident Response,RS.MA-01,Incident management plan is executed,CC7.4,Incident response is executed,A.5.26,Response to information security incidents
+Risk Assessment,ID.RA-01,Vulnerabilities in assets are identified,CC3.2,Entity identifies risks to achievement of objectives,A.5.7,Threat intelligence
+Identity and Authentication,PR.AA-01,Identities and credentials are issued managed and verified,CC6.1,Logical access security software and infrastructure,A.8.5,Secure authentication
+Data Protection - Encryption,PR.DS-01,Data-at-rest is protected,CC6.7,Restriction and protection of information in transmission,A.8.24,Use of cryptography
+Logging and Monitoring,DE.CM-01,Networks and network services are monitored,CC7.1,Detection and monitoring processes are in place,A.8.15,Logging
+Vulnerability Management,ID.RA-01,Vulnerabilities in assets are identified,CC7.1,Detection and monitoring processes are in place,A.8.8,Management of technical vulnerabilities
+Change Management,PR.DS-10,Integrity of software is verified,CC8.1,Changes to infrastructure and software are controlled,A.8.32,Change management
+Business Continuity,RC.RP-01,Recovery plan is executed during or after an incident,A1.2,Environmental protections and recovery infrastructure are maintained,A.5.30,ICT readiness for business continuity
+Third-Party Vendor Management,GV.SC-03,Cybersecurity supply chain risk management is integrated into broader risk management,CC9.2,Vendor and business partner risks are assessed,A.5.19,Information security in supplier relationships
+Security Policy and Governance,GV.PO-01,Policy for managing cybersecurity risks is established,CC1.1,Entity demonstrates commitment to integrity and ethical values,A.5.1,Policies for information security
+Physical Security,PR.AA-02,Physical access to assets is managed and protected,CC6.4,Physical access to facilities and assets is restricted,A.7.1,Physical security perimeters
+HR Security - Onboarding/Offboarding,PR.AA-05,Access permissions use least privilege and separation of duties,CC6.2,System credentials are created and managed,A.6.5,Responsibilities after termination or change of employment
+Asset Management,ID.AM-01,Inventories of hardware managed by the organization are maintained,CC6.1,Logical access security software and infrastructure,A.5.9,Inventory of information and other associated assets
+Data Classification,ID.AM-05,Assets are prioritized based on classification and criticality,C1.1,Confidential information is identified and protected,A.5.12,Classification of information
+Privacy and Data Handling,GV.PO-01,Policy for managing cybersecurity risks is established,P1.1,Privacy notice is provided to data subjects,A.5.34,Privacy and protection of PII
+Secure Development,PR.DS-10,Integrity of software is verified,CC8.1,Changes to infrastructure and software are controlled,A.8.25,Secure development lifecycle
