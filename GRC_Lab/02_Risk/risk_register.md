@@ -74,86 +74,86 @@
 
 ### YOUR RISKS START HERE
 
-<!-- YOUR WORK: Add 12-17 more risks using the same format. Aim for 15-20 total (including the 3 examples above).
-
-Spread your risks across categories. Here are prompts to help you think of realistic risks for SecureTech:
-
-**Cloud & Infrastructure:**
-- What if a critical cloud service goes down?
-- What if there's no disaster recovery plan?
-- What if logs aren't being collected or monitored?
-
-**People & Culture:**
-- What about insider threats (intentional or accidental)?
-- What if employees use unauthorized tools (shadow IT)?
-- What if security training is inadequate?
-
-**Access & Identity:**
-- What about orphaned accounts (ex-employees still having access)?
-- What if privileged access isn't properly managed?
-- What about weak authentication on critical systems?
-
-**Data Protection:**
-- What about ransomware encrypting company data?
-- What if data isn't backed up properly?
-- What about third-party vendors mishandling SecureTech data?
-
-**Compliance & Legal:**
-- What if SecureTech fails a SOC 2 audit?
-- What about changing regulations (privacy laws)?
-- What if contractual security obligations aren't met?
-
-**Operations & Business Continuity:**
-- What if there's no business continuity plan?
-- What about supply chain attacks on tools SecureTech uses?
-
-**Third-Party / Vendor:**
-- What if a critical vendor has a security breach?
-- What if vendor security isn't being assessed?
-
-**Physical Security:**
-- What about laptop theft?
-- What about unauthorized physical access to the office?
-
-For each risk, you must fill in ALL fields: Risk ID, Category, Description, Asset/Process Affected, Threat Source, Vulnerability, Likelihood, Impact, Risk Score, Current Controls, Risk Owner.
-
-Use this format for each risk:
-
-### RISK-004: [Short Risk Title]
-
-| Field | Value |
-|---|---|
-| **Risk ID** | RISK-004 |
-| **Category** | [Category from your methodology] |
-| **Description** | [2-3 sentences describing the risk scenario] |
-| **Asset/Process Affected** | [What systems, data, or processes are at risk?] |
-| **Threat Source** | [Who or what causes this risk?] |
-| **Vulnerability** | [What weakness does the threat exploit?] |
-| **Likelihood** | [1-5] ([Level]) — [Brief justification] |
-| **Impact** | [1-5] ([Level]) — [Brief justification] |
-| **Risk Score** | **[Score] ([Severity])** |
-| **Current Controls** | [What's already in place?] |
-| **Risk Owner** | [Who's accountable?] |
-
-Remember:
-- Justify your Likelihood and Impact scores — don't just pick numbers
-- "Current Controls" shows what SecureTech already has (often basic for a startup)
-- "Risk Owner" should be a role that makes sense (CISO, VP Engineering, HR Director, etc.)
--->
+> **✏️ YOUR WORK**
+> YOUR WORK: Add 12-17 more risks using the same format. Aim for 15-20 total (including the 3 examples above).
+>
+> Spread your risks across categories. Here are prompts to help you think of realistic risks for SecureTech:
+>
+> **Cloud & Infrastructure:**
+> - What if a critical cloud service goes down?
+> - What if there's no disaster recovery plan?
+> - What if logs aren't being collected or monitored?
+>
+> **People & Culture:**
+> - What about insider threats (intentional or accidental)?
+> - What if employees use unauthorized tools (shadow IT)?
+> - What if security training is inadequate?
+>
+> **Access & Identity:**
+> - What about orphaned accounts (ex-employees still having access)?
+> - What if privileged access isn't properly managed?
+> - What about weak authentication on critical systems?
+>
+> **Data Protection:**
+> - What about ransomware encrypting company data?
+> - What if data isn't backed up properly?
+> - What about third-party vendors mishandling SecureTech data?
+>
+> **Compliance & Legal:**
+> - What if SecureTech fails a SOC 2 audit?
+> - What about changing regulations (privacy laws)?
+> - What if contractual security obligations aren't met?
+>
+> **Operations & Business Continuity:**
+> - What if there's no business continuity plan?
+> - What about supply chain attacks on tools SecureTech uses?
+>
+> **Third-Party / Vendor:**
+> - What if a critical vendor has a security breach?
+> - What if vendor security isn't being assessed?
+>
+> **Physical Security:**
+> - What about laptop theft?
+> - What about unauthorized physical access to the office?
+>
+> For each risk, you must fill in ALL fields: Risk ID, Category, Description, Asset/Process Affected, Threat Source, Vulnerability, Likelihood, Impact, Risk Score, Current Controls, Risk Owner.
+>
+> Use this format for each risk:
+>
+> ### RISK-004: [Short Risk Title]
+>
+> | Field | Value |
+> |---|---|
+> | **Risk ID** | RISK-004 |
+> | **Category** | [Category from your methodology] |
+> | **Description** | [2-3 sentences describing the risk scenario] |
+> | **Asset/Process Affected** | [What systems, data, or processes are at risk?] |
+> | **Threat Source** | [Who or what causes this risk?] |
+> | **Vulnerability** | [What weakness does the threat exploit?] |
+> | **Likelihood** | [1-5] ([Level]) — [Brief justification] |
+> | **Impact** | [1-5] ([Level]) — [Brief justification] |
+> | **Risk Score** | **[Score] ([Severity])** |
+> | **Current Controls** | [What's already in place?] |
+> | **Risk Owner** | [Who's accountable?] |
+>
+> Remember:
+> - Justify your Likelihood and Impact scores — don't just pick numbers
+> - "Current Controls" shows what SecureTech already has (often basic for a startup)
+> - "Risk Owner" should be a role that makes sense (CISO, VP Engineering, HR Director, etc.)
 
 ---
 
 ## Risk Register Summary
 
-<!-- YOUR WORK: After completing all risks, fill in this summary table for a quick overview.
-
-| Risk ID | Short Title | Category | Score | Severity |
-|---|---|---|---|---|
-| RISK-001 | Phishing attack | People & Culture | 16 | High |
-| RISK-002 | Cloud misconfiguration | Cloud & Infrastructure | 15 | High |
-| RISK-003 | Key person dependency | People & Culture | 12 | High |
-| RISK-004 | ... | ... | ... | ... |
-| ... | ... | ... | ... | ... |
-
-Sort by Risk Score (highest first) when you're done.
--->
+> **✏️ YOUR WORK**
+> YOUR WORK: After completing all risks, fill in this summary table for a quick overview.
+>
+> | Risk ID | Short Title | Category | Score | Severity |
+> |---|---|---|---|---|
+> | RISK-001 | Phishing attack | People & Culture | 16 | High |
+> | RISK-002 | Cloud misconfiguration | Cloud & Infrastructure | 15 | High |
+> | RISK-003 | Key person dependency | People & Culture | 12 | High |
+> | RISK-004 | ... | ... | ... | ... |
+> | ... | ... | ... | ... | ... |
+>
+> Sort by Risk Score (highest first) when you're done.

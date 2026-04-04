@@ -96,61 +96,61 @@ Then document: what you'll do, why, the timeline, and what the risk score become
 
 ## YOUR TREATMENT PLANS START HERE
 
-<!-- YOUR WORK: Write a treatment plan for EVERY remaining risk in your risk register.
-
-Use this format for each:
-
-### RISK-XXX: [Short Title from Risk Register]
-
-| Field | Value |
-|---|---|
-| **Risk ID** | RISK-XXX |
-| **Current Risk Score** | [Score] ([Severity]) |
-| **Treatment Strategy** | **[Mitigate / Accept / Transfer / Avoid]** |
-| **Justification** | [Why this strategy? 1-2 sentences.] |
-| **Planned Actions** | [Numbered list of specific actions] |
-| **Action Owner** | [Who's responsible for each action?] |
-| **Timeline** | [When will each action be completed?] |
-| **Residual Likelihood** | [New score] ([Level]) |
-| **Residual Impact** | [New score] ([Level]) |
-| **Residual Risk Score** | **[New score] ([Severity])** |
-
-Guidelines:
-- Most risks should be MITIGATED — that's the most common strategy
-- Include at least 1-2 ACCEPTED risks (low-scoring ones)
-- Consider TRANSFERRING at least one risk (cyber insurance is a common example)
-- If any risk should be AVOIDED, explain why eliminating the activity makes business sense
-- Residual risk should be lower than current risk (unless you're accepting it)
-- Timelines should be realistic for a startup — don't say "immediately" for everything
-- Action owners should match the Risk Owner or delegate to someone appropriate
--->
+> **✏️ YOUR WORK**
+> YOUR WORK: Write a treatment plan for EVERY remaining risk in your risk register.
+>
+> Use this format for each:
+>
+> ### RISK-XXX: [Short Title from Risk Register]
+>
+> | Field | Value |
+> |---|---|
+> | **Risk ID** | RISK-XXX |
+> | **Current Risk Score** | [Score] ([Severity]) |
+> | **Treatment Strategy** | **[Mitigate / Accept / Transfer / Avoid]** |
+> | **Justification** | [Why this strategy? 1-2 sentences.] |
+> | **Planned Actions** | [Numbered list of specific actions] |
+> | **Action Owner** | [Who's responsible for each action?] |
+> | **Timeline** | [When will each action be completed?] |
+> | **Residual Likelihood** | [New score] ([Level]) |
+> | **Residual Impact** | [New score] ([Level]) |
+> | **Residual Risk Score** | **[New score] ([Severity])** |
+>
+> Guidelines:
+> - Most risks should be MITIGATED — that's the most common strategy
+> - Include at least 1-2 ACCEPTED risks (low-scoring ones)
+> - Consider TRANSFERRING at least one risk (cyber insurance is a common example)
+> - If any risk should be AVOIDED, explain why eliminating the activity makes business sense
+> - Residual risk should be lower than current risk (unless you're accepting it)
+> - Timelines should be realistic for a startup — don't say "immediately" for everything
+> - Action owners should match the Risk Owner or delegate to someone appropriate
 
 ---
 
 ## Treatment Summary
 
-<!-- YOUR WORK: After completing all treatment plans, fill in this summary.
-
-| Risk ID | Title | Current Score | Strategy | Residual Score | Status |
-|---|---|---|---|---|---|
-| RISK-001 | Phishing attack | 16 (High) | Mitigate | 4 (Low) | In Progress |
-| RISK-002 | Cloud misconfiguration | 15 (High) | Mitigate | 5 (Low) | Planned |
-| RISK-003 | Key person dependency | 12 (High) | Mitigate | 8 (Medium) | Planned |
-| ... | ... | ... | ... | ... | ... |
-
-Status options: Planned, In Progress, Completed
--->
+> **✏️ YOUR WORK**
+> YOUR WORK: After completing all treatment plans, fill in this summary.
+>
+> | Risk ID | Title | Current Score | Strategy | Residual Score | Status |
+> |---|---|---|---|---|---|
+> | RISK-001 | Phishing attack | 16 (High) | Mitigate | 4 (Low) | In Progress |
+> | RISK-002 | Cloud misconfiguration | 15 (High) | Mitigate | 5 (Low) | Planned |
+> | RISK-003 | Key person dependency | 12 (High) | Mitigate | 8 (Medium) | Planned |
+> | ... | ... | ... | ... | ... | ... |
+>
+> Status options: Planned, In Progress, Completed
 
 ---
 
 ## Risk Appetite Compliance Check
 
-<!-- YOUR WORK: After completing all treatment plans, answer these questions:
-
-1. Are all residual risk scores within SecureTech's risk appetite? (Check against your risk_methodology.md)
-2. How many risks are you accepting vs. mitigating vs. transferring vs. avoiding?
-3. Are there any residual risks still rated Critical or High? If so, why are they acceptable?
-4. What's the total cost/effort of all planned mitigations? Is it realistic for a startup?
-
-Write 2-3 paragraphs summarizing.
--->
+> **✏️ YOUR WORK**
+> YOUR WORK: After completing all treatment plans, answer these questions:
+>
+> 1. Are all residual risk scores within SecureTech's risk appetite? (Check against your risk_methodology.md)
+> 2. How many risks are you accepting vs. mitigating vs. transferring vs. avoiding?
+> 3. Are there any residual risks still rated Critical or High? If so, why are they acceptable?
+> 4. What's the total cost/effort of all planned mitigations? Is it realistic for a startup?
+>
+> Write 2-3 paragraphs summarizing.
