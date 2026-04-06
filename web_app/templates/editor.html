@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRC Lab — {{ artifact_label }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">GRC Lab</div>
+      <div class="logo-sub">SecureTech Inc.</div>
+    </div>
+
+    {% for group in nav %}
+    <div class="nav-group">
+      <div class="nav-group-title">{{ group.section }}</div>
+      {% for id in group.items %}
+      <a href="{{ url_for('editor', artifact_id=id) }}"
+         class="nav-item {% if id == artifact_id %}active{% endif %}">
+        {{ labels[id] }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </nav>
+
+  <!-- Main content -->
+  <main class="main">
+
+    <div class="editor-header">
+      <h1 class="artifact-title">{{ artifact_label }}</h1>
+      <div class="header-actions">
+        <span class="save-status" id="saveStatus"></span>
+        <button class="btn btn-secondary" id="saveBtn">Save</button>
+        <button class="btn btn-primary" id="gradeBtn">
+          <span id="gradeBtnText">Grade</span>
+          <span id="gradeBtnSpinner" class="spinner hidden"></span>
+        </button>
+      </div>
+    </div>
+
+    <textarea
+      class="editor"
+      id="editor"
+      placeholder="Start writing your {{ artifact_label }} here...&#10;&#10;Use markdown formatting — headings with #, bold with **text**, lists with - or 1."
+      spellcheck="true"
+    >{{ content }}</textarea>
+
+    <!-- Grade results panel (hidden until graded) -->
+    <div class="results-panel hidden" id="resultsPanel">
+
+      <div class="results-header">
+        <h2 class="results-title">Feedback</h2>
+        <div class="score-badge" id="scoreBadge"></div>
+      </div>
+
+      <div class="checklist" id="checklist"></div>
+
+      <div class="feedback-section">
+        <h3 class="feedback-heading">Manager Feedback</h3>
+        <div class="feedback-text" id="feedbackText"></div>
+      </div>
+
+    </div>
+
+    <div class="error-panel hidden" id="errorPanel"></div>
+
+  </main>
+
+  <script>
+    const ARTIFACT_ID = {{ artifact_id | tojson }};
+    const CSRF_TOKEN  = {{ csrf_token | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

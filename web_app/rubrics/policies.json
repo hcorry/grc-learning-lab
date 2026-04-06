@@ -1,0 +1,59 @@
+{
+  "artifact_context": "This is a security policy document for SecureTech Inc., a ~100-person cybersecurity startup. Policies must be clear, enforceable, and auditable against NIST CSF 2.0, SOC 2 Type II, and ISO 27001:2022.",
+  "criteria": [
+    {
+      "item": "Purpose statement",
+      "description": "A clear statement of why this policy exists and what problem it solves",
+      "weight": 1,
+      "required": true
+    },
+    {
+      "item": "Scope definition",
+      "description": "Explicitly states who and what systems this policy applies to",
+      "weight": 1,
+      "required": true
+    },
+    {
+      "item": "Roles and responsibilities",
+      "description": "Named roles (not just 'employees') with specific obligations under this policy",
+      "weight": 1,
+      "required": true
+    },
+    {
+      "item": "Policy statements / controls",
+      "description": "The actual rules — specific, actionable, not vague. Should use 'must' and 'must not' language.",
+      "weight": 2,
+      "required": true
+    },
+    {
+      "item": "Enforcement and consequences",
+      "description": "What happens when this policy is violated — disciplinary process referenced",
+      "weight": 1,
+      "required": true
+    },
+    {
+      "item": "Exceptions process",
+      "description": "How to request an exception, who approves it, how exceptions are tracked",
+      "weight": 1,
+      "required": false
+    },
+    {
+      "item": "Review schedule",
+      "description": "How often this policy is reviewed and by whom (e.g., annually, after incidents)",
+      "weight": 1,
+      "required": false
+    },
+    {
+      "item": "Version history and approval",
+      "description": "Document version, effective date, and who approved it",
+      "weight": 1,
+      "required": false
+    },
+    {
+      "item": "Compliance framework references",
+      "description": "Maps policy requirements to specific NIST CSF, SOC 2, or ISO 27001 controls",
+      "weight": 1,
+      "required": false
+    }
+  ]
+}

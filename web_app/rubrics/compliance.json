@@ -1,0 +1,53 @@
+{
+  "artifact_context": "This is a compliance artifact for SecureTech Inc., a ~100-person cybersecurity startup pursuing alignment with NIST CSF 2.0, SOC 2 Type II, and ISO 27001:2022. Compliance artifacts must demonstrate understanding of control objectives, implementation status, and the relationships between frameworks.",
+  "criteria": [
+    {
+      "item": "Framework coverage breadth",
+      "description": "Addresses the major functions/categories/domains of the framework, not just a subset",
+      "weight": 2,
+      "required": true
+    },
+    {
+      "item": "Control descriptions are substantive",
+      "description": "Controls are explained with enough detail to understand what they require — not just control IDs copied from the framework",
+      "weight": 2,
+      "required": true
+    },
+    {
+      "item": "Implementation status for each control",
+      "description": "Each control is marked: Implemented / Partially Implemented / Not Implemented / Not Applicable",
+      "weight": 2,
+      "required": true
+    },
+    {
+      "item": "Cross-framework mapping (for compliance_matrix)",
+      "description": "Shows which controls across frameworks are equivalent or related (the crosswalk)",
+      "weight": 2,
+      "required": false
+    },
+    {
+      "item": "Gap identification with remediation",
+      "description": "Gaps are named specifically and include a recommended remediation action",
+      "weight": 2,
+      "required": false
+    },
+    {
+      "item": "SecureTech-specific context",
+      "description": "Applies framework controls to the specific context of a cybersecurity startup — not generic",
+      "weight": 1,
+      "required": false
+    },
+    {
+      "item": "Prioritization of gaps",
+      "description": "Gaps are ranked by severity or business impact — not a flat list",
+      "weight": 1,
+      "required": false
+    },
+    {
+      "item": "Correct GRC terminology",
+      "description": "Uses proper terms: control objectives, trust service criteria, annex controls, subcategories, etc.",
+      "weight": 1,
+      "required": false
+    }
+  ]
+}
