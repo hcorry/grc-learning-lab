@@ -1,4 +1,6 @@
-# Days 3-4 Guide: Risk Management
+# Days 3–4 Guide: Risk Management
+
+**Estimated time: 10–12 hours across 2 days**
 
 ## What You're Building
 

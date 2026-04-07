@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GRC Lab — {{ artifact_label }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +20,7 @@
     {% for group in nav %}
     <div class="nav-group">
       <div class="nav-group-title">{{ group.section }}</div>
-      {% for id in group.items %}
+      {% for id in group.artifacts %}
       <a href="{{ url_for('editor', artifact_id=id) }}"
          class="nav-item {% if id == artifact_id %}active{% endif %}">
         {{ labels[id] }}
@@ -35,6 +37,11 @@
       <h1 class="artifact-title">{{ artifact_label }}</h1>
       <div class="header-actions">
         <span class="save-status" id="saveStatus"></span>
+        <div class="view-toggle" role="group" aria-label="View mode">
+          <button class="view-btn active" data-mode="edit">Edit</button>
+          <button class="view-btn" data-mode="split">Split</button>
+          <button class="view-btn" data-mode="preview">Preview</button>
+        </div>
         <button class="btn btn-secondary" id="saveBtn">Save</button>
         <button class="btn btn-primary" id="gradeBtn">
           <span id="gradeBtnText">Grade</span>
@@ -43,12 +50,15 @@
       </div>
     </div>
 
-    <textarea
-      class="editor"
-      id="editor"
-      placeholder="Start writing your {{ artifact_label }} here...&#10;&#10;Use markdown formatting — headings with #, bold with **text**, lists with - or 1."
-      spellcheck="true"
-    >{{ content }}</textarea>
+    <div class="editor-area" id="editorArea">
+      <textarea
+        class="editor"
+        id="editor"
+        placeholder="Start writing your {{ artifact_label }} here...&#10;&#10;Use markdown formatting — headings with #, bold with **text**, lists with - or 1."
+        spellcheck="true"
+      >{{ content }}</textarea>
+      <div class="preview prose" id="preview" aria-label="Rendered preview"></div>
+    </div>
 
     <!-- Grade results panel (hidden until graded) -->
     <div class="results-panel hidden" id="resultsPanel">

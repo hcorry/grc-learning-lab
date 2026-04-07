@@ -11,6 +11,53 @@ const errorPanel  = document.getElementById("errorPanel");
 const scoreBadge  = document.getElementById("scoreBadge");
 const checklist   = document.getElementById("checklist");
 const feedbackText= document.getElementById("feedbackText");
+const editorArea  = document.getElementById("editorArea");
+const preview     = document.getElementById("preview");
+const viewBtns    = document.querySelectorAll(".view-btn");
+
+// ─── View Toggle ─────────────────────────────────────────────────────────────
+
+marked.setOptions({ breaks: true, gfm: true });
+
+function updatePreview() {
+  // Don't clobber the preview if the user is actively editing it
+  if (document.activeElement === preview) return;
+  const rawHtml  = marked.parse(editor.value || "");
+  const safeHtml = DOMPurify.sanitize(rawHtml);
+  const fragment = document.createRange().createContextualFragment(safeHtml);
+  preview.textContent = "";
+  preview.appendChild(fragment);
+}
+
+function setViewMode(mode) {
+  editorArea.dataset.mode = mode;
+  viewBtns.forEach(btn => btn.classList.toggle("active", btn.dataset.mode === mode));
+  // Preview mode: make the pane editable and re-render from textarea
+  preview.contentEditable = (mode === "preview") ? "true" : "false";
+  if (mode !== "edit") updatePreview();
+}
+
+// Sync edits made directly in the preview pane back to the hidden textarea
+preview.addEventListener("input", () => {
+  if (editorArea.dataset.mode === "preview") {
+    editor.value = preview.innerText;
+    saveStatus.textContent = "Unsaved changes";
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(doSave, 1500);
+  }
+});
+
+// Default to preview mode on load
+setViewMode("preview");
+
+viewBtns.forEach(btn => {
+  btn.addEventListener("click", () => setViewMode(btn.dataset.mode));
+});
+
+// Keep preview in sync when editing via the textarea (split/edit modes)
+editor.addEventListener("input", () => {
+  if (editorArea.dataset.mode !== "edit") updatePreview();
+});
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 

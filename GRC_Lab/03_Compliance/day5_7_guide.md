@@ -1,4 +1,6 @@
-# Days 5-7 Guide: Compliance Framework Mapping
+# Days 5–7 Guide: Compliance Framework Mapping
+
+**Estimated time: 12–14 hours across 3 days**
 
 ## What You're Building
 

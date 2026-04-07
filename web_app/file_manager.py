@@ -13,6 +13,26 @@ _BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 # Explicit map of artifact IDs to relative paths within the project.
 # ONLY these paths can be read or written — nothing else.
 ARTIFACT_PATHS = {
+    # Program overview & company reference
+    "program_overview":                  "GRC_Lab/program_overview.md",
+    "company_profile":                   "GRC_Lab/securetech_company_profile.md",
+
+    # Automation theory
+    "guide_automation_theory":           "GRC_Lab/04_Automation/day8_10_guide_automation_theory.md",
+    "automation_readme":                 "GRC_Lab/04_Automation/README.md",
+
+    # Reports
+    "report_executive_summary":          "GRC_Lab/05_Reports/executive_summary.md",
+
+    # Guides (split by section)
+    "guide_day1_policies":               "GRC_Lab/01_Governance/day1_guide_policies.md",
+    "guide_day2_procedures":             "GRC_Lab/01_Governance/day2_guide_procedures.md",
+    "guide_day3_4":                      "GRC_Lab/02_Risk/day3_4_guide.md",
+    "guide_day5_7":                      "GRC_Lab/03_Compliance/day5_7_guide.md",
+
+    # Governance — Overview
+    "gov_overview":                      "GRC_Lab/01_Governance/governance_overview.md",
+
     # Governance — Policies
     "gov_policy_information_security":  "GRC_Lab/01_Governance/policies/information_security_policy.md",
     "gov_policy_acceptable_use":        "GRC_Lab/01_Governance/policies/acceptable_use_policy.md",
@@ -42,6 +62,16 @@ ARTIFACT_PATHS = {
 
 # Human-readable labels for the sidebar
 ARTIFACT_LABELS = {
+    "program_overview":                  "Program Overview & Schedule",
+    "company_profile":                   "SecureTech Inc. — Company Profile",
+    "guide_automation_theory":           "Days 8–10 Guide: Automation Theory",
+    "automation_readme":                 "Automation Tools — Reference",
+    "report_executive_summary":          "Executive Summary",
+    "guide_day1_policies":               "Day 1 Guide: Policies",
+    "guide_day2_procedures":             "Day 2 Guide: Procedures",
+    "guide_day3_4":                      "Day 3–4 Guide: Risk Management",
+    "guide_day5_7":                      "Day 5–7 Guide: Compliance",
+    "gov_overview":                      "Governance Overview",
     "gov_policy_information_security":  "Information Security Policy",
     "gov_policy_acceptable_use":        "Acceptable Use Policy",
     "gov_policy_access_control":        "Access Control Policy",

@@ -33,8 +33,16 @@ app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
 # Sidebar navigation structure — order controls display order
 NAV = [
     {
+        "section": "Start Here",
+        "artifacts": [
+            "program_overview",
+            "company_profile",
+        ]
+    },
+    {
         "section": "Governance — Policies",
-        "items": [
+        "artifacts": [
+            "guide_day1_policies",
             "gov_policy_information_security",
             "gov_policy_acceptable_use",
             "gov_policy_access_control",
@@ -44,17 +52,20 @@ NAV = [
     },
     {
         "section": "Governance — Procedures",
-        "items": [
+        "artifacts": [
+            "guide_day2_procedures",
             "gov_proc_information_security",
             "gov_proc_acceptable_use",
             "gov_proc_access_control",
             "gov_proc_incident_response",
             "gov_proc_data_classification",
+            "gov_overview",
         ]
     },
     {
         "section": "Risk Management",
-        "items": [
+        "artifacts": [
+            "guide_day3_4",
             "risk_methodology",
             "risk_register",
             "risk_treatment_plans",
@@ -62,12 +73,26 @@ NAV = [
     },
     {
         "section": "Compliance",
-        "items": [
+        "artifacts": [
+            "guide_day5_7",
             "compliance_nist_csf",
             "compliance_soc2",
             "compliance_iso27001",
             "compliance_matrix",
             "compliance_gap_analysis",
+        ]
+    },
+    {
+        "section": "Automation",
+        "artifacts": [
+            "guide_automation_theory",
+            "automation_readme",
+        ]
+    },
+    {
+        "section": "Reports",
+        "artifacts": [
+            "report_executive_summary",
         ]
     },
 ]

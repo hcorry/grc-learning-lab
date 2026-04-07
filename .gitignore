@@ -2,10 +2,32 @@ docs/
 GRC_Profile/
 blog_post.md
 CLAUDE.md
-Screenshot 2026-04-04 at 2.10.31 AM.png
 
-# Web app secrets
+# Screenshots (contain Unicode space character in filename)
+Screenshot*.png
+
+# Web app secrets — NEVER commit
 web_app/.env
-web_app/__pycache__/
-web_app/**/__pycache__/
+*.env
+
+# Python cache
+__pycache__/
+**/__pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Superpowers / Claude Code internal state
+.superpowers/
+.claude/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Logs and runtime files
+*.log
+*.pid
+
+# Flask session files (if added later)
+flask_session/
